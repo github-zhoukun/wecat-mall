@@ -1,0 +1,32 @@
+<!--pages/mine/mine.wxml-->
+<text>pages/mine/mine.wxml</text>
+<view>{{msg}}</view>
+
+<view >
+  <view wx:for= "{{list}}" wx:item = "item" wx:index = "index" wx:key = "item.age">
+    {{index}} - {{item.name}} - {{item.age}}
+  </view>
+</view>
+
+<view>
+  <block  wx:for= "{{list}}" wx:item = "item" wx:index = "index" wx:key = "item.age">
+  block -
+    {{index}} - {{item.name}} - {{item.age}}
+  </block>
+</view>
+
+<view>
+  <view wx:if = "{{true}}">xianshi</view>
+  <view wx:if = "{{false}}">yincang</view>
+  <text>----------------</text>
+
+<view wx:if="{{false}}">1</view>
+<view wx:elif= "{{true}}">2 </view>
+<view wx:else>3</view>
+
+  <text>----------------</text>
+<view hidden>hidden1</view>
+<view hidden="{{false}}">hidden2</view>
+
+</view>
+
